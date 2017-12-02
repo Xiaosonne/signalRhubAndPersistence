@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-1.6.4.min.js"></script> 
+    <script src="Scripts/jquery.signalR-2.2.2.min.js"></script>
+    <script src="Scripts/vue.js"></script>
+    <script src="http://localhost:8080/rooms/hubs"></script>
+</head>
+<body>
+    <div id='app'>
+        <input type="text" v-model="text" />
+        <input type="button" v-on:click="send" value="send" /> 
+        <div>
+            <label>group</label><input type="text" v-model="groupName" />
+            <p>
+                <input type="button" v-on:click="sendgroup" value="sendgroup" />
+                <input type="button" v-on:click="joingroup" value="enter room" />
+            </p>
+        </div> 
+       
+        <ul>
+            <li v-for="msg in msgs">{{msg}}</li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+        var con = null;
+        var roomHub = null;
+        $(function () {
+            $.connection.hub.url = "http://localhost:8080/rooms";
+            roomHub = $.connection.roomHub;
+            roomHub.client.reportGroupMember = function (clientid,group ) {
+                console.log(group, clientid);
+            }; 
+            roomHub.client.onMessage = function (data) {
+                console.log(data);
+            }; 
+            con = $.connection("http://localhost:8080/test");
+            con.received(function (data) {
+                vm.msgs.push(data);
+                console.log(data);
+            });
+            $.connection.hub.start()
+            con.start();
+        })
+        var vm = new Vue({
+            el: "#app",
+            data: {
+                text: "",
+                groupName:"",
+                msgs:[]
+            },
+            methods: {
+                joingroup: function () {
+                    roomHub.server.joinGroup(this.groupName);
+                },
+                sendgroup: function () {
+                    roomHub.server.groupMessage(this.groupName, this.text);
+                },
+                send: function () {
+                    con.send(this.text);
+                    this.text = "";
+                }
+            }
+        })
+    </script>
+</body>
+</html>
