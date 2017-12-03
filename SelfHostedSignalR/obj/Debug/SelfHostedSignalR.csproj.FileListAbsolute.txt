@@ -22,4 +22,3 @@ C:\Users\xiaosonne\Documents\Visual Studio 2017\Projects\SSignalR\SelfHostedSign
 C:\Users\xiaosonne\Documents\Visual Studio 2017\Projects\SSignalR\SelfHostedSignalR\obj\Debug\SelfHostedSignalR.csproj.CoreCompileInputs.cache
 C:\Users\xiaosonne\Documents\Visual Studio 2017\Projects\SSignalR\SelfHostedSignalR\obj\Debug\SelfHostedSignalR.exe
 C:\Users\xiaosonne\Documents\Visual Studio 2017\Projects\SSignalR\SelfHostedSignalR\obj\Debug\SelfHostedSignalR.pdb
-C:\Users\xiaosonne\Documents\Visual Studio 2017\Projects\SSignalR\SelfHostedSignalR\obj\Debug\SelfHostedSignalR.csprojResolveAssemblyReference.cache
