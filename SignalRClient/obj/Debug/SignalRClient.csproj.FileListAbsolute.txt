@@ -1,9 +1,0 @@
-C:\Users\xiaosonne\Documents\Visual Studio 2017\Projects\SSignalR\SignalRClient\bin\SignalRClient.dll.config
-C:\Users\xiaosonne\Documents\Visual Studio 2017\Projects\SSignalR\SignalRClient\bin\SignalRClient.dll
-C:\Users\xiaosonne\Documents\Visual Studio 2017\Projects\SSignalR\SignalRClient\bin\SignalRClient.pdb
-C:\Users\xiaosonne\Documents\Visual Studio 2017\Projects\SSignalR\SignalRClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-C:\Users\xiaosonne\Documents\Visual Studio 2017\Projects\SSignalR\SignalRClient\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\xiaosonne\Documents\Visual Studio 2017\Projects\SSignalR\SignalRClient\obj\Debug\SignalRClient.csprojResolveAssemblyReference.cache
-C:\Users\xiaosonne\Documents\Visual Studio 2017\Projects\SSignalR\SignalRClient\obj\Debug\SignalRClient.csproj.CoreCompileInputs.cache
-C:\Users\xiaosonne\Documents\Visual Studio 2017\Projects\SSignalR\SignalRClient\obj\Debug\SignalRClient.dll
-C:\Users\xiaosonne\Documents\Visual Studio 2017\Projects\SSignalR\SignalRClient\obj\Debug\SignalRClient.pdb
